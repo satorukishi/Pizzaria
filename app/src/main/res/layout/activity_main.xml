@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="br.com.satoruchannel.pizzaria.MainActivity">
+
+    <TextView
+        android:gravity="right"
+        android:id="@+id/tvCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Olá, Fulano de Tal" />
+
+    <TextView
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Escolha a(s) pizza(s)" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cbCalabresa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calabresa"
+            android:layout_weight="0.5"/>
+        <CheckBox
+            android:id="@+id/cbAtum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Atum"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/cbBacon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bacon"
+            android:layout_weight="0.5"/>
+
+        <CheckBox
+            android:id="@+id/cbPortuguesa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Portuguesa"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tamanho da pizza" />
+
+    <RadioGroup
+        android:id="@+id/rgTamanho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbBroto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Broto"/>
+        <RadioButton
+            android:id="@+id/rbNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal"/>
+        <RadioButton
+            android:id="@+id/rbGrande"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grande"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forma de pagamento"/>
+    <Spinner
+        android:id="@+id/spPagamentos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/pagamento">
+    </Spinner>
+
+    <Button
+        android:id="@+id/btFecharPedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fechar pedido"/>
+</LinearLayout>

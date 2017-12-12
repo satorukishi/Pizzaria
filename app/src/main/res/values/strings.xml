@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Pizzaria</string>
+    <string name="form_username">Seu Login</string>
+    <string name="form_password">Sua Senha</string>
+    <string name="botao_conectar">Conectar</string>
+    <string name="error_username">Login não informado</string>
+    <string name="error_password">Senha está em branco</string>
+
+    <!--arrays.xml-->
+    <string name="vale_refeicao">Vale Refeição</string>
+    <string name="cartao">Cartão</string>
+    <string name="dinheiro">Dinheiro</string>
+</resources>
